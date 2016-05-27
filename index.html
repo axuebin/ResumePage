@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/amazeui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/echarts.common.min.js"></script>
+</head>
+<body>
+    <div id="content" class="am-g">
+    	<div class="am-u-sm-4" id="sidebar">
+		   	<div id="photo" class="box">
+		   		<img id="touxiang" src="image/touxiang.png" alt="照片">
+		   	</div>
+		   	<div id="phone" class="box">
+		   		<h2>联系方式</h2>
+		   		<p>电话：13115710810</p>
+		   		<p>邮箱：xb@axuebin.com</p>
+		   	</div>
+		   	<div id="web" class="box">
+		   		<h2>个人网站</h2>
+		   		<p>个人主页：http://axuebin.com</p>
+		   		<p>Github：https://github.com/xb9207</p>
+		   	</div>
+		   	<div id="skills" class="box">
+		   		<h2>编程技能</h2>
+		   		<div id="skills_chart">
+		   			<script type="text/javascript">
+		   				display_skills();
+		   			</script>
+		   		</div>
+		   		
+		   	</div>
+		   	<div id="others" class="box">
+		   		<h2>其他技能</h2>
+		   		<div id="others_chart">
+		   			<script type="text/javascript">
+		   				display_others();
+		   			</script>
+		   		</div>
+		   	</div>
+    	</div>
+
+    	<div class="am-u-sm-8" id="main">
+    		<div id="name" class="am-u-sm-6">
+    			<h1 class="am-serif">薛彬</h1>
+    		</div>
+    		<div id="job" class="am-u-sm-6">
+    			<h1 class="am-serif">Java实习生</h1>
+    		</div>
+
+    		<hr style=" height:5px;border:none;background-color:black;margin-bottom:30px;" />
+
+    		<div class="info am-panel am-panel-default ">
+    			<div class="am-panel-hd"><strong>教育背景</strong></div>
+    			<div class="edu">
+    				<div class="am-g">
+		    			<div class="am-u-sm-4" >
+		    				<p>2011/9 -- 2015/6</p>
+		    			</div>
+		    			<div class="am-u-sm-4" >
+		    				<p>本科，电子信息工程</p>
+		    			</div>
+		    			<div class="am-u-sm-4" style="text-align: right;" >
+		    				<p>西安文理学院</p>
+		    			</div>
+	    			</div>
+		    		<div class="am-g">
+		    			<div class="am-u-sm-4" >
+		    				<p></p>
+		    			</div>
+		    			<div class="am-u-sm-8" >
+		    				<p>国家奖学金</p>
+		    				<p>通过英语六级</p>
+		    				<p>飞思卡尔智能车竞赛西部赛区二等奖</p>
+		    				<p>大学生挑战杯科技制作大赛陕西省三等奖</p>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="edu">
+		    		<div class="am-g">
+		    			<div class="am-u-sm-4" >
+		    				<p>2015/9 -- 至今</p>
+		    			</div>
+		    			<div class="am-u-sm-4" >
+		    				<p>硕士，计算机应用技术</p>
+		    			</div>
+		    			<div class="am-u-sm-4" style="text-align: right;" >
+		    				<p>中国计量大学</p>
+		    			</div>
+		    		</div>
+    			</div>
+	    		<!--<div class="am-g">
+	    			<div class="am-u-sm-3" >
+	    				<p></p>
+	    			</div>
+	    			<div class="am-u-sm-9" >
+	    			</div>
+	    		</div>-->
+    		</div>
+    		<div class="info am-panel am-panel-default">
+    			<div class="am-panel-hd"><strong>项目经验</strong></div>
+    			<div class="projects">
+    				<div class="am-g">
+		    			<div class="am-u-sm-4" >
+		    				<p>2015/10 -- 2015/12</p>
+		    			</div>
+		    			<div class="am-u-sm-4" >
+		    				<p>大数据可视化展示平台</p>
+		    			</div>
+		    			<div class="am-u-sm-4" style="text-align: right;" >
+		    				<p>导师项目</p>
+		    			</div>
+	    			</div>
+		    		<div class="am-g">
+		    			<div class="am-u-sm-4" >
+		    				<p></p>
+		    			</div>
+		    			<div class="am-u-sm-8" >
+		    				<p>负责前端页面实现</p>
+		    				<p>实现csv文件转换成数组</p>
+		    				<p>掌握servlet访问mysql</p>
+		    				<p>了解Echarts和BaiduMap的使用</p>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="projects">
+    				<div class="am-g">
+		    			<div class="am-u-sm-4" >
+		    				<p>2016/04</p>
+		    			</div>
+		    			<div class="am-u-sm-4" >
+		    				<p>财务审批测算平台</p>
+		    			</div>
+		    			<div class="am-u-sm-4" style="text-align: right;" >
+		    				<p>导师项目</p>
+		    			</div>
+	    			</div>
+		    		<div class="am-g">
+		    			<div class="am-u-sm-4" >
+		    				<p></p>
+		    			</div>
+		    			<div class="am-u-sm-8" >
+		    				<p>负责前端页面实现</p>
+		    				<p>掌握表单、表格序列化方法</p>
+		    				<p>使用了Amaze UI前端开源框架并修改其中样式</p>
+		    			</div>
+		    		</div>
+		    	</div>
+
+	    		<div class="projects">
+    				<div class="am-g">
+		    			<div class="am-u-sm-4" >
+		    				<p>2016/04</p>
+		    			</div>
+		    			<div class="am-u-sm-4" >
+		    				<p>时间可视化分析平台</p>
+		    			</div>
+		    			<div class="am-u-sm-4" style="text-align: right;" >
+		    				<p>个人项目</p>
+		    			</div>
+	    			</div>
+		    		<div class="am-g">
+		    			<div class="am-u-sm-4" >
+		    				<p></p>
+		    			</div>
+		    			<div class="am-u-sm-8" >
+		    				<p>负责前端页面实现</p>
+		    				<p>掌握layer.js弹出层插件的使用</p>
+		    				<p>实现Echarts图表在弹出层中适配移动端</p>
+		    			</div>
+		    		</div>
+	    		</div>
+
+	    		<div class="projects">
+    				<div class="am-g">
+		    			<div class="am-u-sm-4" >
+		    				<p>2016/01 -- 至今</p>
+		    			</div>
+		    			<div class="am-u-sm-4" >
+		    				<p>个人博客</p>
+		    			</div>
+		    			<div class="am-u-sm-4" style="text-align: right;" >
+		    				<p>个人项目</p>
+		    			</div>
+	    			</div>
+		    		<div class="am-g">
+		    			<div class="am-u-sm-4" >
+		    				<p></p>
+		    			</div>
+		    			<div class="am-u-sm-8" >
+		    				<p>学会了Github的使用</p>
+		    				<p>在模板的基础上个性化博客样式</p>
+		    				<p>用于记录和分享自己的成长经历</p>
+		    			</div>
+		    		</div>
+	    		</div>
+
+
+
+
+    		</div>
+    	</div>
+    </div>
+    
+</body>
+</html>
